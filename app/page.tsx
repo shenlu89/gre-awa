@@ -59,33 +59,36 @@ export default function Home() {
           </button>
         </div>
         <div className="flex flex-col p-4 border border-slate-200 bg-white space-y-4">
-          <div className="text-lg font-bold">
-            {selectedTopic?.topic
-              ?.split("\n\n")
-              .map((p: any, index: number) => (
-                <div key={index}>{p}</div>
-              ))}
-          </div>
-          <hr className="border border-slate-200 border-t-transparent" />
-          <div>{selectedTopic?.statements}</div>
-          <hr className="border border-slate-200 border-t-transparent" />
-          <div className="flex justify-between items-center">
-            <div>#{selectedTopic?.id}</div>
-            <div className="flex items-center space-x-2 justify-between">
-              <div
-                className="flex items-center"
-              >
-                {selectedTopic?.starred ? <HiStar className="size-6 fill-yellow-500" /> : <HiOutlineStar className="size-6" />}
-              </div>
-              <Link
-                href={`/topics/${selectedTopic?.id}`}
-                className="flex items-center rounded-full select-none space-x-1 text-sm w-fit justify-center font-bold px-3 py-2 border text-green-500 border-green-500 bg-white hover:text-white hover:bg-green-500 "
-              >
-                <span>Go to Write</span>
-                <LuSquarePen className="size-5" />
-              </Link>
+          {selectedTopic ? <>
+            <div className="text-lg font-bold">
+              {selectedTopic?.topic
+                ?.split("\n\n")
+                .map((p: any, index: number) => (
+                  <div key={index}>{p}</div>
+                ))}
             </div>
-          </div>
+            <hr className="border border-slate-200 border-t-transparent" />
+            <div>{selectedTopic?.statements}</div>
+            <hr className="border border-slate-200 border-t-transparent" />
+            <div className="flex justify-between items-center">
+              <div>#{selectedTopic?.id}</div>
+              <div className="flex items-center space-x-2 justify-between">
+                <div
+                  className="flex items-center"
+                >
+                  {selectedTopic?.starred ? <HiStar className="size-6 fill-yellow-500" /> : <HiOutlineStar className="size-6" />}
+                </div>
+                <Link
+                  href={`/topics/${selectedTopic?.id}`}
+                  className="flex items-center rounded-full select-none space-x-1 text-sm w-fit justify-center font-bold px-3 py-2 border text-green-500 border-green-500 bg-white hover:text-white hover:bg-green-500 "
+                >
+                  <span>Go to Write</span>
+                  <LuSquarePen className="size-5" />
+                </Link>
+              </div>
+            </div>
+          </> : <span className="flex w-full justify-center py-8 text-lg">No GRE Issue topics were found.</span>}
+
         </div>
         <div className="md:flex justify-between space-x-4 hidden">
           <div className="flex flex-col w-1/2 items-center">
