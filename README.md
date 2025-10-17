@@ -10,4 +10,4 @@ A toolkit can help you practice and prepare effectively for the GRE Analytical W
 -	💾 Your writing history is saved locally in your browser (localStorage)
 
 ## License
-GRE GO is licensed under the [MIT](LICENSE) License.
+Licensed under the [MIT License](https://github.com/shenlu89/grego/blob/main/LICENSE).
