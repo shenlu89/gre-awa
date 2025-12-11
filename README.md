@@ -1,4 +1,4 @@
-# GRE GO
+# GRE AWA
 
 A toolkit can help you practice and prepare effectively for the GRE Analytical Writing.
 
