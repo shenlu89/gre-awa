@@ -14,14 +14,14 @@ export default function About() {
     <div className="flex flex-col w-full items-start leading-6">
       <h1 className="flex text-2xl font-extrabold mb-4">About</h1>
       <p className="flex text-slate-600 mb-4">
-        GRE GO is a website that helps practice and prepare effectively for the GRE Analytical Writing.
+        GRE AWA is a website that helps practice and prepare effectively for the GRE Analytical Writing.
       </p>
       <h1 className="flex text-2xl font-extrabold mb-4">FAQs</h1>
       <h2 className="flex text-xl font-extrabold mb-4">What motivated me to build this website?</h2>
       <p className="text-slate-600 mb-4">
         I created this website as a tool to help me prepare for the GRE Analytical Writing section in 2025. As a non-native English speaker, writing is one of my biggest challenges. To improve my writing skills, I developed this site to practice and enhance my performance in the GRE Analytical Writing section. Now that my exam is complete, I share this tool with others facing similar challenges. I hope it helps you practice, improve, and succeed in your GRE writing journey!
       </p>
-      <h2 className="flex text-xl font-extrabold mb-4">How does GRE GO classify all the instructions for issues?</h2>
+      <h2 className="flex text-xl font-extrabold mb-4">How does GRE AWA classify all the instructions for issues?</h2>
       <p className="text-slate-600 mb-4">
         All the{" "}
         <Link href="https://www.ets.org/gre/test-takers/general-test/prepare/content/analytical-writing/issue.html#accordion-514f0607b1-item-605010d7b3">
